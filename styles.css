@@ -107,35 +107,18 @@ button {
   line-height: 1;
 }
 
-.instagram-icon {
-  position: relative;
-}
-
-.instagram-icon::before {
-  content: "";
+.social-icon svg {
   width: 15px;
   height: 15px;
-  border: 2px solid currentColor;
-  border-radius: 5px;
+  display: block;
+  fill: currentColor;
+  stroke: none;
 }
 
-.instagram-icon::after {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-}
-
-.instagram-icon > span {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: currentColor;
+.instagram-icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
 }
 
 .hero {
