@@ -120,26 +120,16 @@ button {
   color: var(--tiffany-deep);
 }
 
-.social-icon svg {
-  width: 16px;
-  height: 16px;
+.social-icon img {
+  width: 15px;
+  height: 15px;
   display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  object-fit: contain;
 }
 
-.instagram-icon svg {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-}
-
-.instagram-icon svg circle:last-child {
-  fill: currentColor;
-  stroke: none;
+.instagram-icon img {
+  width: 17px;
+  height: 17px;
 }
 
 .hero {
