@@ -6,8 +6,11 @@
   --surface: #ffffff;
   --soft: #f6f6f4;
   --line: rgba(21, 21, 21, 0.11);
-  --accent: #6f7377;
-  --teal: #8f9698;
+  --tiffany: #81d8d0;
+  --tiffany-soft: #e7f8f6;
+  --tiffany-deep: #258f87;
+  --accent: #258f87;
+  --teal: #81d8d0;
   --gold: #a2a6a3;
   --plum: #2d2d2d;
   --shadow: 0 18px 55px rgba(18, 18, 18, 0.08);
@@ -93,6 +96,10 @@ button {
   opacity: 0.86;
 }
 
+.nav a:hover {
+  color: var(--tiffany-deep);
+}
+
 .social-icon {
   width: 32px;
   height: 32px;
@@ -107,18 +114,32 @@ button {
   line-height: 1;
 }
 
+.social-icon:hover {
+  border-color: var(--tiffany);
+  background: var(--tiffany-soft);
+  color: var(--tiffany-deep);
+}
+
 .social-icon svg {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   display: block;
-  fill: currentColor;
-  stroke: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .instagram-icon svg {
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
+}
+
+.instagram-icon svg circle:last-child {
+  fill: currentColor;
+  stroke: none;
 }
 
 .hero {
@@ -132,7 +153,7 @@ button {
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background:
-    radial-gradient(circle at 82% 24%, rgba(21, 21, 21, 0.06), transparent 24%),
+    radial-gradient(circle at 82% 24%, rgba(129, 216, 208, 0.24), transparent 24%),
     linear-gradient(180deg, #ffffff 0%, #f7f7f5 100%);
   color: var(--ink);
 }
@@ -211,20 +232,20 @@ h1 {
 }
 
 .button.primary {
-  background: var(--ink);
-  color: #fff;
+  background: var(--tiffany);
+  color: #103c39;
 }
 
 .button.ghost {
-  border-color: var(--line);
-  background: rgba(255, 255, 255, 0.58);
-  color: var(--ink);
+  border-color: rgba(129, 216, 208, 0.65);
+  background: rgba(231, 248, 246, 0.72);
+  color: #155a55;
 }
 
 .button.outline {
-  border-color: var(--line);
+  border-color: rgba(129, 216, 208, 0.7);
   background: transparent;
-  color: var(--ink);
+  color: #155a55;
 }
 
 .hero-panel {
@@ -282,7 +303,7 @@ h1 {
   padding: 20px;
   border-radius: 6px;
   background:
-    radial-gradient(circle at 50% 50%, rgba(21, 21, 21, 0.08), transparent 34%),
+    radial-gradient(circle at 50% 50%, rgba(129, 216, 208, 0.34), transparent 34%),
     var(--soft);
 }
 
@@ -291,7 +312,7 @@ h1 {
   min-width: 16px;
   height: calc(28px + var(--i) * 11px);
   border-radius: 999px;
-  background: linear-gradient(180deg, #e7e7e4, #151515);
+  background: linear-gradient(180deg, #ffffff, var(--tiffany) 48%, #151515);
   transform-origin: bottom;
   animation: pulse 1.6s ease-in-out infinite alternate;
   animation-delay: calc(var(--i) * -0.12s);
@@ -388,8 +409,9 @@ h2 {
 }
 
 .filter.active {
-  background: var(--ink);
-  color: var(--surface);
+  border-color: var(--tiffany);
+  background: var(--tiffany);
+  color: #103c39;
 }
 
 .work-grid {
@@ -416,7 +438,7 @@ h2 {
 
 .work-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 38px rgba(18, 18, 18, 0.08);
+  box-shadow: 0 16px 38px rgba(37, 143, 135, 0.14);
 }
 
 .work-visual {
@@ -524,7 +546,7 @@ h3 {
 }
 
 .services {
-  background: var(--soft);
+  background: var(--tiffany-soft);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -547,8 +569,8 @@ h3 {
   place-items: center;
   margin-bottom: 34px;
   border-radius: 50%;
-  background: var(--ink);
-  color: #fff;
+  background: var(--tiffany);
+  color: #103c39;
   font-size: 28px;
   line-height: 1;
 }
@@ -582,11 +604,11 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(129, 216, 208, 0.72);
   border-radius: 999px;
   padding: 6px 14px 6px 7px;
   background: transparent;
-  color: var(--ink);
+  color: #155a55;
   font-weight: 700;
   white-space: nowrap;
 }
