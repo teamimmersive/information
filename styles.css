@@ -582,11 +582,33 @@ h3 {
   white-space: nowrap;
 }
 
-.contact-actions {
+.contact-panel {
+  display: grid;
+  gap: 14px;
+  justify-items: end;
+}
+
+.sns-box {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--tiffany-soft);
+}
+
+.sns-label {
+  color: var(--tiffany-deep);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sns-links {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: end;
 }
 
 .social-link {
@@ -706,7 +728,8 @@ h3 {
 
   .hero-actions,
   .footer,
-  .contact-actions {
+  .contact-panel,
+  .sns-links {
     display: grid;
   }
 }
