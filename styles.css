@@ -349,12 +349,25 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.intro p {
+.mission-copy {
   max-width: 1050px;
-  margin: 0;
-  font-size: clamp(21px, 3vw, 40px);
+}
+
+.mission-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(30px, 4.6vw, 58px);
+}
+
+.mission-copy p {
+  max-width: 1050px;
+  margin: 0 0 14px;
+  font-size: clamp(20px, 2.5vw, 34px);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.45;
+}
+
+.mission-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .section {
