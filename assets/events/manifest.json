@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "vol1",
+    "title": "2022｜Dolby Atmos体験会 vol.1（2022.12.11）",
+    "file": "assets/events/01-vol1.png",
+    "bytes": 2223112
+  },
+  {
+    "slug": "vol2",
+    "title": "2023｜Dolby Atmos体験会 vol.2（2023.1.22）",
+    "file": "assets/events/02-vol2.jpg",
+    "bytes": 146605
+  },
+  {
+    "slug": "vol3",
+    "title": "2023｜Dolby Atmos体験会 vol.3（2023.4.22）",
+    "file": "assets/events/03-vol3.png",
+    "bytes": 1729296
+  },
+  {
+    "slug": "vol4",
+    "title": "2023｜Dolby Atmos体験会 vol.4（2023.7.1）",
+    "file": "assets/events/04-vol4.jpg",
+    "bytes": 177889
+  },
+  {
+    "slug": "vol5",
+    "title": "2023｜Dolby Atmos体験会 vol.5（2023.9.24）",
+    "file": "assets/events/05-vol5.png",
+    "bytes": 1355941
+  },
+  {
+    "slug": "vol6",
+    "title": "2023｜Dolby Atmos体験会 vol.6（2023.11.12）",
+    "file": "assets/events/06-vol6.png",
+    "bytes": 1119881
+  },
+  {
+    "slug": "vol7",
+    "title": "2024｜Dolby Atmos体験会 vol.7（2024.4.14）",
+    "file": "assets/events/07-vol7.png",
+    "bytes": 1410881
+  },
+  {
+    "slug": "vol8",
+    "title": "2024｜Dolby Atmos体験会 vol.8（2024.7.14）",
+    "file": "assets/events/08-vol8.png",
+    "bytes": 2107310
+  },
+  {
+    "slug": "extra",
+    "title": "2024｜Dolby Atmos体験会 番外編（2024.9.15）",
+    "file": "assets/events/09-extra.jpg",
+    "bytes": 118759
+  },
+  {
+    "slug": "vol9",
+    "title": "2024｜Dolby Atmos体験会 vol.9（2024.10.5）",
+    "file": "assets/events/10-vol9.png",
+    "bytes": 2099337
+  },
+  {
+    "slug": "hokuriku",
+    "title": "第8回北陸オーディオショウ出展｜立体音響を体験しよう（2025.4.12-13）",
+    "file": "assets/events/11-hokuriku.png",
+    "bytes": 1116638
+  },
+  {
+    "slug": "vol10",
+    "title": "2025｜Dolby Atmos体験会 vol.10（2025.4.19）",
+    "file": "assets/events/12-vol10.png",
+    "bytes": 1272985
+  },
+  {
+    "slug": "sake",
+    "title": "立体音響とお酒｜日本酒barうなー★★",
+    "file": "assets/events/13-sake.png",
+    "bytes": 1846308
+  },
+  {
+    "slug": "talk",
+    "title": "2026｜いい音対談（2025.4.12）",
+    "file": "assets/events/14-talk.png",
+    "bytes": 975152
+  }
+]

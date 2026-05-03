@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>立体音響普及委員会 | Portfolio</title>
+    <meta
+      name="description"
+      content="立体音響普及委員会の活動実績、制作領域、ケーススタディをまとめたポートフォリオサイト。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="立体音響普及委員会 トップへ">
+        <img class="brand-logo" src="assets/logo.png" alt="" />
+        <span>立体音響普及委員会</span>
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#works">Works</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="https://x.com/immersivetoyama">X</a>
+        <a href="https://www.instagram.com/immersive_toyama/">Instagram</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="soundfield" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+          <p class="eyebrow">Dolby Atmos Experience / Listening Session / Dialogue</p>
+          <h1 id="hero-title">立体音響普及委員会</h1>
+          <p class="lead">
+            立体音響で広がる世界🌍立体音響からはじまる、新しい体験、新しい価値。
+          </p>
+          <div class="hero-actions" aria-label="主要アクション">
+            <a class="button primary" href="#works">実績を見る</a>
+            <a class="button ghost" href="#contact">相談する</a>
+          </div>
+        </div>
+        <aside class="hero-panel logo-panel" aria-label="ロゴと音場プレビュー">
+          <img class="hero-logo" src="assets/logo.png" alt="立体音響普及委員会 ロゴ" />
+          <div class="panel-head">
+            <span>Soundfield Preview</span>
+            <button class="icon-button" id="motionToggle" type="button" aria-pressed="true" aria-label="動きを切り替え">
+              <span aria-hidden="true">⏸</span>
+            </button>
+          </div>
+          <div class="spatial-meter" aria-hidden="true">
+            <span style="--i: 0"></span>
+            <span style="--i: 1"></span>
+            <span style="--i: 2"></span>
+            <span style="--i: 3"></span>
+            <span style="--i: 4"></span>
+            <span style="--i: 5"></span>
+            <span style="--i: 6"></span>
+            <span style="--i: 7"></span>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>Format</dt>
+              <dd>Ambisonics / Binaural / 7.1.4</dd>
+            </div>
+            <div>
+              <dt>Activity</dt>
+              <dd>体験会・対談・展示出展・フリー視聴</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="intro band" aria-label="活動概要">
+        <div class="section-kicker">Mission</div>
+        <p>
+          立体音響という選択肢をより多くの人に届け、新しい体験と価値の可能性を広げる。
+        </p>
+      </section>
+
+      <section class="section" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Selected Works</div>
+            <h2 id="works-title">活動実績</h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="実績カテゴリ">
+            <button class="filter active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter" type="button" data-filter="session" role="tab" aria-selected="false">体験会</button>
+            <button class="filter" type="button" data-filter="event" role="tab" aria-selected="false">出展</button>
+            <button class="filter" type="button" data-filter="talk" role="tab" aria-selected="false">対談</button>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/01-vol1.png" alt="Dolby Atmos体験会 vol.1の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2022.12.11 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.1</h3>
+              <p>ゲスト：善岡慧一（ピアニスト）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/02-vol2.jpg" alt="Dolby Atmos体験会 vol.2の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2023.1.22 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.2</h3>
+              <p>ゲスト：ドイヒロト（ミュージシャン）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/03-vol3.png" alt="Dolby Atmos体験会 vol.3の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2023.4.22 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.3</h3>
+              <p>ゲスト：和田元気（ドラムテック）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/04-vol4.jpg" alt="Dolby Atmos体験会 vol.4の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2023.7.1 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.4</h3>
+              <p>ゲスト：ベルマインツ（ミュージシャン）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/05-vol5.png" alt="Dolby Atmos体験会 vol.5の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2023.9.24 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.5</h3>
+              <p>ゲスト：小森雅仁（レコーディング・ミキシングエンジニア）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/06-vol6.png" alt="Dolby Atmos体験会 vol.6の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2023.11.12 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.6</h3>
+              <p>ゲスト：Kenta Dedachi（ミュージシャン）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/07-vol7.png" alt="Dolby Atmos体験会 vol.7の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2024.4.14 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.7</h3>
+              <p>ゲスト：善岡彗一（ピアニスト）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/08-vol8.png" alt="Dolby Atmos体験会 vol.8の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2024.7.14 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.8</h3>
+              <p>ゲスト：フリー視聴</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/09-extra.jpg" alt="Dolby Atmos体験会 番外編の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2024.9.15 / 番外編</span>
+              <h3>Dolby Atmos体験会 番外編</h3>
+              <p>主催：善岡彗一（ピアニスト）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/10-vol9.png" alt="Dolby Atmos体験会 vol.9の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2024.10.5 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.9</h3>
+              <p>ゲスト：戸田清章・長谷川巧（レコーディング・ミキシングエンジニア）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="session">
+            <div class="work-visual"><img src="assets/events/12-vol10.png" alt="Dolby Atmos体験会 vol.10の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2025.4.19 / 体験会</span>
+              <h3>Dolby Atmos体験会 vol.10</h3>
+              <p>ゲスト：D.W.ニコルズ（ミュージシャン）</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="event">
+            <div class="work-visual"><img src="assets/events/11-hokuriku.png" alt="第8回北陸オーディオショウ出展の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2025.4.12-13 / 出展</span>
+              <h3>第8回北陸オーディオショウ</h3>
+              <p>ゲスト：フリー視聴</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="event">
+            <div class="work-visual"><img src="assets/events/13-sake.png" alt="立体音響とお酒の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2025.2.1 / イベント</span>
+              <h3>立体音響とお酒｜日本酒barうなー★★</h3>
+              <p>協力：Xylomania Studio LLC</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="talk">
+            <div class="work-visual"><img src="assets/events/14-talk.png" alt="いい音対談の様子" /></div>
+            <div class="work-copy">
+              <span class="tag">2025.4.12 / 対談</span>
+              <h3>いい音対談</h3>
+              <p>高橋久美子・古賀健一を迎え、音の体験、制作、リスニング文化を横断する対話を企画。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">Timeline</div>
+            <h2 id="timeline-title">年表</h2>
+          </div>
+        </div>
+        <div class="timeline-list">
+          <article>
+            <time>2022.12.11</time>
+            <h3>Dolby Atmos体験会 vol.1</h3>
+            <p>ゲスト：善岡慧一（ピアニスト） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2023.1.22</time>
+            <h3>Dolby Atmos体験会 vol.2</h3>
+            <p>ゲスト：ドイヒロト（ミュージシャン） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2023.4.22</time>
+            <h3>Dolby Atmos体験会 vol.3</h3>
+            <p>ゲスト：和田元気（ドラムテック） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2023.7.1</time>
+            <h3>Dolby Atmos体験会 vol.4</h3>
+            <p>ゲスト：ベルマインツ（ミュージシャン） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2023.9.24</time>
+            <h3>Dolby Atmos体験会 vol.5</h3>
+            <p>ゲスト：小森雅仁（レコーディング・ミキシングエンジニア） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2023.11.12</time>
+            <h3>Dolby Atmos体験会 vol.6</h3>
+            <p>ゲスト：Kenta Dedachi（ミュージシャン） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2024.4.14</time>
+            <h3>Dolby Atmos体験会 vol.7</h3>
+            <p>ゲスト：善岡彗一（ピアニスト） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2024.7.14</time>
+            <h3>Dolby Atmos体験会 vol.8</h3>
+            <p>ゲスト：フリー視聴 / 協力：Xylomania Studio LLC、バール・デ・美富味</p>
+          </article>
+          <article>
+            <time>2024.9.15</time>
+            <h3>Dolby Atmos体験会 番外編</h3>
+            <p>主催：善岡彗一（ピアニスト） / 協力：善岡彗一、Xylomania Studio LLC、八百新酒造株式会社</p>
+          </article>
+          <article>
+            <time>2024.10.5</time>
+            <h3>Dolby Atmos体験会 vol.9</h3>
+            <p>ゲスト：戸田清章・長谷川巧（レコーディング・ミキシングエンジニア） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2025.4.12-13</time>
+            <h3>第8回北陸オーディオショウ出展｜立体音響を体験しよう</h3>
+            <p>ゲスト：フリー視聴 / 協力：ACOUSTIC FIELD INC.、Xylomania Studio LLC、ソニックエージェンシー株式会社、メディアインテグレーション</p>
+          </article>
+          <article>
+            <time>2025.4.19</time>
+            <h3>Dolby Atmos体験会 vol.10</h3>
+            <p>ゲスト：D.W.ニコルズ（ミュージシャン） / 協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2025.2.1</time>
+            <h3>立体音響とお酒｜日本酒barうなー★★</h3>
+            <p>協力：Xylomania Studio LLC</p>
+          </article>
+          <article>
+            <time>2025.4.12</time>
+            <h3>いい音対談</h3>
+            <p>ゲスト：高橋久美子・古賀健一 / 協力：巣巣SUSU、Xylomania Studio LLC</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">Activities</div>
+            <h2 id="services-title">活動のかたち</h2>
+          </div>
+        </div>
+        <div class="service-list">
+          <article>
+            <span class="service-icon" aria-hidden="true">◎</span>
+            <h3>体験会</h3>
+            <p>Dolby Atmos作品を実際に聴きながら、音場、制作意図、聴取環境を対話形式でひらく場。</p>
+          </article>
+          <article>
+            <span class="service-icon" aria-hidden="true">◍</span>
+            <h3>展示・フリー視聴</h3>
+            <p>オーディオショウや店舗イベントで、初めての人でも触れやすい試聴体験を設計。</p>
+          </article>
+          <article>
+            <span class="service-icon" aria-hidden="true">◌</span>
+            <h3>対談・発信</h3>
+            <p>音楽家、エンジニア、作り手の言葉を通して、立体音響の価値を文化として伝える。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2 id="contact-title">イベント・視聴会の相談</h2>
+          <p>
+            窓口：永冨由紀子。体験会、展示出展、対談企画、フリー視聴など、立体音響を届ける場づくりについてご相談ください。
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary contact-button" href="mailto:lizeyucco@gmail.com">メールで相談する</a>
+          <a class="button outline contact-button" href="https://lit.link/teamimmersive">lit.linkを見る</a>
+          <a class="button outline contact-button" href="https://x.com/immersivetoyama">Xを見る</a>
+          <a class="button outline contact-button" href="https://www.instagram.com/immersive_toyama/">Instagramを見る</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 立体音響普及委員会</span>
+      <span>X: @immersivetoyama / Instagram: @immersive_toyama</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
